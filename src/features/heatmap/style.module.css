@@ -1,0 +1,35 @@
+.wrapper {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.heatmap {
+  position: relative;
+  min-height: 500px;
+  max-width: 100vw;
+  max-height: 100vh;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hotspot {
+  position: absolute;
+  width: var(--cell-size);
+  height: var(--cell-size);
+  background-color: red;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: opacity 0.2s ease-out;
+}

@@ -11,7 +11,7 @@ import stylistic from '@stylistic/eslint-plugin'
 export default tseslint.config(
   tseslint.configs.strict,
   tseslint.configs.stylistic,
-  { ignores: ['dist', 'src/assets', "coverage"] },
+  { ignores: ['dist', 'src/assets', "coverage", '.vite'] },
   {
     extends: [
       js.configs.recommended,
