@@ -1,0 +1,25 @@
+.wrapper {
+  border: 1px solid #ccc;
+  padding: 1em;
+  border-radius: 5px;
+  margin: 0 auto;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.symbolTypeGroup {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.btnGenerate {
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  padding: 5px 15px;
+
+}

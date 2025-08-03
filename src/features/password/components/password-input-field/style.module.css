@@ -1,0 +1,44 @@
+.wrapper {
+  position: relative;
+}
+
+.inputField {
+  min-width: 20ch;
+  width: 100%;
+  padding: 0.5em 1em;
+  border: 1px solid #ccc;
+  border-radius: 0.25em;
+}
+
+.copyIconWrapper {
+  position: absolute;
+  right: 0.5em;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  opacity: 0.5;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  color: #666;
+}
+
+.copyIconWrapper svg {
+  width: 100%;
+  height: 100%;
+}
+
+.copyIconWrapper:hover {
+  opacity: 1;
+  color: #000;
+}
+
+.copyIconWrapper.active {
+  transform: scale(1.05) translateY(-50%);
+}
