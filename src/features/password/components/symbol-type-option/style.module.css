@@ -1,0 +1,6 @@
+.symbolTypeOption {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5px;
+  align-items: center;
+}
