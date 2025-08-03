@@ -1,6 +1,6 @@
 import { useCallback, useState } from "react";
 import { generatePassword, calculatePasswordStrength } from "../utils";
-import { SYMBOL_TYPE } from "../constants/constants";
+import { SYMBOL_TYPE } from "../constants";
 
 export function useHandlers(){
   const [passwordText, setPasswordText] = useState("");

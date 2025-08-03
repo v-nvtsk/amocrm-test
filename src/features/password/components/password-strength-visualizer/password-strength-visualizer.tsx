@@ -20,7 +20,7 @@ export const PasswordStrengthVisualizer = ({ max, value }: Props) => {
         role="progressbar"
         className={styles.progress}
         style={{ "width": `${percent}%`,
-          backgroundColor } as React.CSSProperties}
+          backgroundColor }}
       >
       </div>
     </div>

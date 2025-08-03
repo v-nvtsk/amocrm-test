@@ -3,7 +3,7 @@ import userEvent from "@testing-library/user-event";
 import { PasswordGenerator } from "./main";
 import { vi } from "vitest";
 import { useHandlers } from "./hooks/use-handlers";
-import { SYMBOL_TYPE } from "./constants/constants";
+import { SYMBOL_TYPE } from "./constants";
 
 vi.mock("./hooks/use-handlers", () => ({
   useHandlers: vi.fn(),
