@@ -3,7 +3,7 @@ import { vi } from "vitest";
 import { useHandlers } from "./use-handlers";
 import { generatePassword, calculatePasswordStrength } from "../utils";
 import type React from "react";
-import { PASSWORD_STRENGTH_MAX, SYMBOL_TYPE } from "../constants/constants";
+import { PASSWORD_STRENGTH_MAX, SYMBOL_TYPE } from "../constants";
 
 vi.mock("../utils", async () => {
   const actual = await vi.importActual<typeof import("../utils")>("../utils");

@@ -1,4 +1,4 @@
-import { PASSWORD_STRENGTH_WEIGHTS } from "../../constants/constants";
+import { PASSWORD_STRENGTH_WEIGHTS } from "../../constants";
 
 export const calculatePasswordStrength = (value: string): number => {
 
@@ -10,9 +10,8 @@ export const calculatePasswordStrength = (value: string): number => {
   let hasSymbols = false;
 
   for (const char of value) {
-    if (/[a-z]/.test(char)) { // Проверяем только строчные буквы
-      hasLowercase = true;
-    } else if (/[a-z]/i.test(char)) hasUppercase = true;
+    if (/[a-z]/.test(char)) hasLowercase = true;
+    else if (/[A-Z]/i.test(char)) hasUppercase = true;
     else if (/[0-9]/.test(char)) hasDigits = true;
     else hasSymbols = true;
   }

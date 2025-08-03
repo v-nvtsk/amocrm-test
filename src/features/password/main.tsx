@@ -2,7 +2,7 @@ import styles from "./style.module.css";
 import { SymbolTypeOption, PasswordInputField, PasswordStrengthVisualizer } from "./components/";
 import { useHandlers } from "./hooks/use-handlers";
 import { PasswordLengthInput } from "./components/password-length-input/password-length-input";
-import { PASSWORD_LENGTH_MAX, PASSWORD_LENGTH_MIN, PASSWORD_STRENGTH_MAX, SYMBOL_TYPE } from "./constants/constants";
+import { PASSWORD_LENGTH_MAX, PASSWORD_LENGTH_MIN, PASSWORD_STRENGTH_MAX, SYMBOL_TYPE } from "./constants";
 
 export const PasswordGenerator = () => {
 

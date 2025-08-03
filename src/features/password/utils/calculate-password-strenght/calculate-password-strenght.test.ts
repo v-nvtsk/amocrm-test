@@ -1,4 +1,4 @@
-import { PASSWORD_STRENGTH_MAX, PASSWORD_STRENGTH_WEIGHTS } from "../../constants/constants";
+import { PASSWORD_STRENGTH_MAX, PASSWORD_STRENGTH_WEIGHTS } from "../../constants";
 import { calculatePasswordStrength } from "./calculate-password-strenght";
 
 describe("calculatePasswordStrength", () => {
