@@ -23,3 +23,14 @@
   padding: 5px 15px;
 
 }
+
+@media (width <600px) {
+
+  .wrapper {
+    padding: 0.5em;
+  }
+
+  .symbolTypeGroup {
+    flex-direction: column;
+  }
+}

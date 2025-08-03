@@ -14,7 +14,7 @@ export function useHandlers(){
     ev.preventDefault();
 
     const password = generatePassword({ length: passwordLength,
-      chars: takeChars,
+      uppercase: takeChars,
       numbers: takeNumbers,
       symbols: takeSymbols,
     });
@@ -24,7 +24,7 @@ export function useHandlers(){
   }, [passwordLength, takeChars, takeNumbers, takeSymbols]);
 
   const optionToggleHandler = useCallback((option: string) => {
-    if (option === SYMBOL_TYPE.CHARS) setTakeChars(!takeChars);
+    if (option === SYMBOL_TYPE.UPPERCASE) setTakeChars(!takeChars);
     if (option === SYMBOL_TYPE.DIGITS) setTakeNumbers(!takeNumbers);
     if (option === SYMBOL_TYPE.SYMBOLS) setTakeSymbols(!takeSymbols);
   }, [takeChars, takeNumbers, takeSymbols]);

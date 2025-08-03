@@ -58,7 +58,7 @@ describe("PasswordGenerator", () => {
     expect(inputMaxLengthHandler).toHaveBeenCalledWith(12);
 
     await userEvent.click(screen.getAllByRole("checkbox")[0]);
-    expect(optionToggleHandler).toHaveBeenCalledWith(SYMBOL_TYPE.CHARS);
+    expect(optionToggleHandler).toHaveBeenCalledWith(SYMBOL_TYPE.UPPERCASE);
 
     await userEvent.click(screen.getAllByRole("checkbox")[1]);
     expect(optionToggleHandler).toHaveBeenCalledWith(SYMBOL_TYPE.DIGITS);

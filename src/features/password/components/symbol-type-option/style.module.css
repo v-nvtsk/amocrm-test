@@ -4,3 +4,10 @@
   gap: 5px;
   align-items: center;
 }
+
+@media (width < 600px) {
+
+  .symbolTypeOption {
+    align-items: flex-start
+  }
+}

@@ -1,3 +1,5 @@
+import styles from "./style.module.css";
+
 interface Props{
   min: number,
   max: number,
@@ -14,12 +16,11 @@ export const PasswordLengthInput = ({ changeHandler, max, min,
   };
 
   return (
-    <div style={{ display: "flex",
-      justifyContent: "space-between" }}>
-      <input type="range" name="passwordLength" id="passwordLength"
+    <div className={styles.wrapper}>
+      <input className={styles.inputRange} type="range" name="passwordLength" id="passwordLength"
         min={min} max={max} onChange={onChange} value={value}
-        style={{ width: "50%" }}/>
-      <label htmlFor="passwordLength">Длина пароля: {value} знаков</label>
+      />
+      <label className={styles.label} htmlFor="passwordLength">Длина пароля: {value} знаков</label>
     </div>
   );
 };

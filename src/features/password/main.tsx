@@ -18,8 +18,8 @@ export const PasswordGenerator = () => {
       <div className={styles.symbolTypeGroup}>
         <SymbolTypeOption
           checked={takeChars}
-          onChange={() => optionToggleHandler(SYMBOL_TYPE.CHARS)}
-          label="Символы"/>
+          onChange={() => optionToggleHandler(SYMBOL_TYPE.UPPERCASE)}
+          label="Заглавные буквы"/>
 
         <SymbolTypeOption
           checked={takeNumbers}
