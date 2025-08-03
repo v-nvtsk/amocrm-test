@@ -50,7 +50,7 @@ describe("useHandlers", () => {
 
     expect(mockGeneratePassword).toHaveBeenCalledWith({
       length: 16,
-      chars: true,
+      uppercase: true,
       numbers: true,
       symbols: true,
     });

@@ -1,0 +1,25 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputRange {
+  width: 50%;
+}
+
+@media (width < 600px) {
+
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .inputRange {
+    width: 100%
+  }
+
+  .label {
+    font-size: 0.75em;
+  }
+}

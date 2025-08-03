@@ -2,7 +2,7 @@ import { randomIntBetween } from "$/utils";
 
 interface PasswordGeneratorProps{
   length: number;
-  chars: boolean;
+  uppercase: boolean;
   numbers: boolean;
   symbols: boolean;
 
@@ -11,19 +11,17 @@ interface PasswordGeneratorProps{
 const LETTERS_LOWER = "abcdefghijklmnopqrstuvwxyz";
 const LETTERS_UPPER = LETTERS_LOWER.toUpperCase();
 
-export const LETTERS = LETTERS_LOWER.concat(LETTERS_UPPER);
-
 export const DIGITS = "0123456789";
 
 export const SYMBOLS = "!@#$%^&*()-_=+[]{}:,.?";
 
-export const generatePassword = ({ length, chars, numbers, symbols }: PasswordGeneratorProps): string => {
-  if (!chars && !numbers && !symbols) return "";
+export const generatePassword = ({ length, uppercase, numbers, symbols }: PasswordGeneratorProps): string => {
 
   const result = [];
 
   const pools: string[] = [];
-  if (chars) pools.push(LETTERS);
+  pools.push(LETTERS_LOWER);
+  if (uppercase) pools.push(LETTERS_UPPER);
   if (numbers) pools.push(DIGITS);
   if (symbols) pools.push(SYMBOLS);
 
